@@ -30,3 +30,17 @@ define('PHPGRID_DB_CHARSET','utf8'); // ex: utf8(for mysql),AL32UTF8 (for oracle
 /*
 
 5. Una vez más nos aeguramos de que el código está escrito correcatamente y si es así la página ya deberia funcionar con normalidad, permitiendonos acceder a los apartados de "Login as manager" y "Login as employee"
+
+-----------------------------------------------------------------------
+
+6. Continuando con un nuevo proyecto, vamos a implementar un login de usuario y contraseña dentro de cada uno de los apartados (manager y employee).
+
+7. Para ello vamos a reutilizar los 3 elementos de login que utilizamos en el proyecto "bootstrap-npm-starter". Estos son:
+
+sesiones1_login.php
+sesiones1_logout.php
+sesiones1_principal.php
+
+8. Los copiamos y pegamos en el directorio raiz de este proyecto y procedemos a enlazar de manera que cuando pulsamos en Login as employee accedamos al sesiones1_login.php y cuando pulsamos en login as employee accedamos a sesiones1_login2.php (el cual  ha sido creado para este proyecto en concreto). Estos cambios se van a realizar principalemnte en index.php, tasks.php,  clients.php, login y login2. Además copiamos el contenido del archivo sesiones1_principal.php al inicio de clients y tasks con el fin de que todo este correctamente conectado.
+
+9. Por ultimo, para poder realizar el logout, cambiamos la "Location" que muestra por la de index.php y si está tambien correctamente inluido en clients y tasks nos debería permitir volver a la página de inicio para logearnos de nuevo.
